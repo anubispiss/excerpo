@@ -8,10 +8,12 @@ BreadcrumbList,
 BreadcrumbLink,
 BreadcrumbSeparator,
 } from './ui/breadcrumb';
+import { MobileSidebar } from './Siderbar';
 function BreadcrumbHeader() {
     const pathName= usePathname();
     const paths=pathName==="/" ? [""]: pathName?.split("/");
     return <div className="flex items-center flex-start flex-start">
+        <MobileSidebar/>
     <Breadcrumb>
         <BreadcrumbList> {paths.map((path,index) =>(
                 <React.Fragment key={index}>

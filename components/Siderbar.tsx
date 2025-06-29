@@ -56,4 +56,9 @@ return (
 )
 }
 
+export function MobileSidebar() {
+    return <div>Mobile Siderbar</div>
+}
+
+
 export default DesktopSiderbar
